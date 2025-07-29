@@ -56,7 +56,7 @@ def main():
 
     procname = get_first_procname(proc_file)
     print(f"Running rrrMMU for: {procname}")
-    run_rrrMMU_and_save_output(procname, try_dir, Path(output_dir))
+    run_rrrMMU_and_save_output(procname, try_dir, backend_two_dir)
     print(f"Running exe for: {procname}")
     run_exe_using_bash(procname, base_dir, output_dir)
 
